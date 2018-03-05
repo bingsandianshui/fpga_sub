@@ -1,0 +1,120 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ADC_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/spi_master.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/timer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/find_start.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module find_start
+# 
+# Top level modules:
+# 	find_start
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01_TOP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LTC1744_T01_TOP
+# 
+# Top level modules:
+# 	LTC1744_T01_TOP
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LTC1744_T01
+# 
+# Top level modules:
+# 	LTC1744_T01
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/pll_200.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_200
+# 
+# Top level modules:
+# 	pll_200
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/led_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module led_control
+# 
+# Top level modules:
+# 	led_control
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip/dpram.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram
+# 
+# Top level modules:
+# 	dpram
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db/pll_200_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pll_200_altpll
+# 
+# Top level modules:
+# 	pll_200_altpll
+# 
+# vlog -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench {E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench/LTC1744_T01_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module LTC1744_T01_tb
+# 
+# Top level modules:
+# 	LTC1744_T01_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  LTC1744_T01_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps LTC1744_T01_tb 
+# Loading work.LTC1744_T01_tb
+# Loading work.LTC1744_T01_TOP
+# Loading work.pll_200
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.LTC1744_T01
+# Loading work.find_start
+# Loading work.timer
+# Loading work.dpram
+# Loading altera_mf_ver.scfifo
+# Loading work.spi_master
+# Loading work.led_control
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: chunhou  Hostname: CHUNHOU-PC  ProcessID: 6504
+# 
+#           Attempting to use alternate WLF file "./wlfttkj070".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfttkj070
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: LTC1744_T01_tb.LTC1744_T01_TOP1.pll_200_0.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint sim:/LTC1744_T01_tb/LTC1744_T01_TOP1/LTC1744_T01_00/*
+add wave -position insertpoint sim:/LTC1744_T01_tb/LTC1744_T01_TOP1/find_start_00/*
+add wave -position insertpoint sim:/LTC1744_T01_tb/LTC1744_T01_TOP1/timer0/*
+add wave -position insertpoint sim:/LTC1744_T01_tb/LTC1744_T01_TOP1/spi_master0/*
+restart
+run -all
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 60000  Instance: LTC1744_T01_tb.LTC1744_T01_TOP1.pll_200_0.altpll_component.cycloneiii_pll.pll3
+# Break in Module LTC1744_T01_tb at E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench/LTC1744_T01_tb.v line 114

@@ -1,0 +1,47 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Document\quartus 2\LTC1746_FST3253_T04_NEW_EP4CE6E_02\prj\simulation\modelsim
+vLTC1744_T01_tb
+!i10b 1
+!s100 IjgPPX06Q9k>=^<VA<H122
+Ief?mX;E>HnD8l?1_47TJc1
+V@XNJYjZ:kIPYb_[mE]VVF0
+Z1 dE:\Document\quartus 2\LTC1746_FST3253_T04_NEW_EP4CE6E_02\prj\simulation\modelsim
+w1507606219
+8E:/Document/quartus 2/LTC1746_FST3253_T04_NEW_EP4CE6E_02/prj/../testbench/LTC1744_T01_tb.v
+FE:/Document/quartus 2/LTC1746_FST3253_T04_NEW_EP4CE6E_02/prj/../testbench/LTC1744_T01_tb.v
+L0 4
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1508143646.103000
+!s107 E:/Document/quartus 2/LTC1746_FST3253_T04_NEW_EP4CE6E_02/prj/../testbench/LTC1744_T01_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Document/quartus 2/LTC1746_FST3253_T04_NEW_EP4CE6E_02/prj/../testbench|E:/Document/quartus 2/LTC1746_FST3253_T04_NEW_EP4CE6E_02/prj/../testbench/LTC1744_T01_tb.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work {+incdir+E:/Document/quartus 2/LTC1746_FST3253_T04_NEW_EP4CE6E_02/prj/../testbench} -O0
+n@l@t@c1744_@t01_tb
+vLTC1744_T01_TOP
+IbNKaS3E:V_hQ3G@?fgWN=1
+VhjLUc0kSYAIzaQQ=kF:TB2
+R1
+w1508143442
+8ADC_8_1200mv_85c_slow.vo
+FADC_8_1200mv_85c_slow.vo
+L0 31
+R2
+r1
+31
+R3
+n@l@t@c1744_@t01_@t@o@p
+!i10b 1
+!s100 I1lNzGiOzLaLobMTG5_fA0
+!s85 0
+!s108 1508143645.301000
+!s107 ADC_8_1200mv_85c_slow.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|ADC_8_1200mv_85c_slow.vo|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+. -O0

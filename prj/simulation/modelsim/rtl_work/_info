@@ -1,0 +1,208 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\zhengchunhou\LTC1746_FST3253_T04_NEW_EP4CE6E_05\prj\simulation\modelsim
+vdpram
+I[AgcA_PzMg18JMjV@T<Ae1
+VLS9icE97gJVUcTl8XCA?_1
+Z1 dE:\zhengchunhou\LTC1746_FST3253_T04_NEW_EP4CE6E_05\prj\simulation\modelsim
+w1515746043
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip/dpram.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip/dpram.v
+L0 39
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 gYM?zHndg0<T0Nz3?RZ[z0
+!s85 0
+!s108 1515822413.130000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip/dpram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip/dpram.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/ip -O0
+vfind_start
+I^3G`6363G3zR=d^zkVBCl2
+V0H0KI892>7RHd021Z7OF_3
+R1
+w1515751383
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/find_start.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/find_start.v
+L0 1
+R2
+r1
+31
+R3
+Z4 !s92 -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl -O0
+!i10b 1
+!s100 WL[FjKVk]_ocAB`H8EZO[2
+!s85 0
+!s108 1515822412.444000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/find_start.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/find_start.v|
+!s101 -O0
+vled_control
+IJ4dDhJ`BPND[2ULOhR0mf0
+VCQSVaO=[QnQC:mz_A>Bc>3
+R1
+w1507110728
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/led_control.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/led_control.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 zj]mJ:Tk[>ke8Pc4`fjih2
+!s85 0
+!s108 1515822413.005000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/led_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/led_control.v|
+!s101 -O0
+vLTC1744_T01
+I=ffSKoZA61HQoidY1``Il3
+V5<gMZf2`Ui4Pm6T6dmdL?0
+R1
+w1515750411
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01.v
+L0 6
+R2
+r1
+31
+R3
+R4
+n@l@t@c1744_@t01
+!i10b 1
+!s100 TXPJ=gmTaI23fz?MnhAL63
+!s85 0
+!s108 1515822412.693000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01.v|
+!s101 -O0
+vLTC1744_T01_tb
+!i10b 1
+!s100 g<]XOji9jjDDnQLOEKKn80
+I>390jiO3IjCI6]hb@?10d1
+V@XNJYjZ:kIPYb_[mE]VVF0
+R1
+w1515758028
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench/LTC1744_T01_tb.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench/LTC1744_T01_tb.v
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1515822413.426000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench/LTC1744_T01_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench/LTC1744_T01_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/../testbench -O0
+n@l@t@c1744_@t01_tb
+vLTC1744_T01_TOP
+I5R2HhDbJCiN8e?;Uha`ji1
+VkfTg[gZ:kgCD3HcnGcjJ72
+R1
+w1515750190
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01_TOP.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01_TOP.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@l@t@c1744_@t01_@t@o@p
+!i10b 1
+!s100 Fl4DcR:1N:VFMZ6Mm6VK92
+!s85 0
+!s108 1515822412.568000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01_TOP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/LTC1744_T01_TOP.v|
+!s101 -O0
+vpll_200
+I1i3_;nVM@MG1:K6^aA;f82
+VW6=KOT0X@5_<61:e7Y:Eo1
+R1
+w1500518542
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/pll_200.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/pll_200.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 DhcXK07`o^ho6`?GNGdZ41
+!s85 0
+!s108 1515822412.818000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/pll_200.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/pll_200.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj -O0
+vpll_200_altpll
+I8CMZ8DMX^Of9=hNYNj_N`2
+VCXPg1m;[e:nn3n8P[blk62
+R1
+w1500518728
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db/pll_200_altpll.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db/pll_200_altpll.v
+L0 29
+R2
+r1
+31
+R3
+!i10b 1
+!s100 b_XGUmPSC6WB2Ab^YOKU:2
+!s85 0
+!s108 1515822413.270000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db/pll_200_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db/pll_200_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/prj/db -O0
+vspi_master
+IEiQL;PMmCUdVZib>e_n[H3
+VS8JH:KzOUTbbY?]RD`:O<0
+R1
+w1515677318
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/spi_master.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/spi_master.v
+L0 5
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 N:1hSW5UkFIf6bC?edXXA1
+!s85 0
+!s108 1515822412.147000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/spi_master.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/spi_master.v|
+!s101 -O0
+vtimer
+Ih;@S=Ia][h8@gFda0OBC12
+V]kNGA7UIA[Zn=OX0lOO=I1
+R1
+w1515822351
+8E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/timer.v
+FE:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/timer.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;GEeo54?o31D3M5Pi2aEO3
+!s85 0
+!s108 1515822412.319000
+!s107 E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl|E:/zhengchunhou/LTC1746_FST3253_T04_NEW_EP4CE6E_05/rtl/timer.v|
+!s101 -O0

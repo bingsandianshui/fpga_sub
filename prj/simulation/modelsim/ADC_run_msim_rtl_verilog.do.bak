@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+E:/Document/quartus\ 2/LTC1744_ADG759_T04_NEW/rtl {E:/Document/quartus 2/LTC1744_ADG759_T04_NEW/rtl/LTC1744_T01_TOP.v}
+vlog -vlog01compat -work work +incdir+E:/Document/quartus\ 2/LTC1744_ADG759_T04_NEW/rtl {E:/Document/quartus 2/LTC1744_ADG759_T04_NEW/rtl/LTC1744_T01.v}
+vlog -vlog01compat -work work +incdir+E:/Document/quartus\ 2/LTC1744_ADG759_T04_NEW/prj {E:/Document/quartus 2/LTC1744_ADG759_T04_NEW/prj/pll_100_150.v}
+vlog -vlog01compat -work work +incdir+E:/Document/quartus\ 2/LTC1744_ADG759_T04_NEW/prj/db {E:/Document/quartus 2/LTC1744_ADG759_T04_NEW/prj/db/pll_100_150_altpll.v}
+

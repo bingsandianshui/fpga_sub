@@ -1,0 +1,5 @@
+
+State Machine - |LTC1744_T01_TOP|timer:timer0|cnt_start_store
+Name cnt_start_store.01 
+cnt_start_store.00 0 
+cnt_start_store.01 1 
