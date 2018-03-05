@@ -1,0 +1,126 @@
+module timer(Clk,Rst_n,one_turn,Samp_en,data_in0,data_in1,data_in2,data_in3,data_out);
+
+	input Clk;			//200M
+	input Rst_n;
+	input one_turn;		//4 channels one turn finish
+	input Samp_en;		//after 99640us, 180 points store start, 
+	
+
+	input [13:0] data_in0;
+	input [13:0] data_in1;
+	input [13:0] data_in2;
+	input [13:0] data_in3;
+
+	output [15:0] data_out;
+
+	parameter pulse_w = 72000;		//pulse width 360us->180points
+	parameter period = 20000000;	//0.1hz 28bit
+
+	//******************************	store data to fifo
+	reg start_store;				//start store effect data at one_turn_count_samp = 49820 point; high level; start 180 points
+
+	reg [7:0] samp_point;			//the number of samp_points, 180 max(0-179)
+
+	reg [11:0] cnt_2M;				//2M frequency cnt 1;99;199;299; store one turn 4 channels
+	parameter cnt_2M_max = 400;		//100*5ns
+	reg one_turn_0;					//	new	delay 3 clk200M to get stable data		
+	reg one_turn_1;
+	reg one_turn_2;					//	old
+	wire one_turn_posedge;			//  posedge of one_turn, count the one_turn_posedge!!!!
+
+	reg [15:0] one_turn_count;		//0.1s is 50000 points(2us per point)one_turn_posedge
+	parameter one_turn_count_max = 50000;	//50000 max 50000 points
+	parameter one_turn_count_samp = 49820;	//49820 store from 49820 to 50000 point (store 180 points)
+	parameter points = 180;
+
+	reg [11:0] address;				//ram address 0-719
+	parameter address_max = 720;	//max ram address 180 points * 4 channel = 720
+	reg [15:0] wdata_temp;			//ram write data temp
+	reg wren;
+	
+	//delay 3 clk200M to get stable data
+	assign one_turn_posedge = (!one_turn_2) && (one_turn_1);
+	always @(posedge Clk or negedge Rst_n) begin
+		if (!Rst_n)	begin	
+			one_turn_0 <= 1'b0;
+			one_turn_1 <= 1'b0;
+			one_turn_2 <= 1'b0;
+		end
+		else begin
+			one_turn_0 <= one_turn;
+			one_turn_1 <= one_turn_0;
+			one_turn_2 <= one_turn_1;
+		end // else
+	end // always
+	
+	//one_turn_count one_turn_posedge
+	always @(posedge Clk or negedge Rst_n) begin
+		if (!Rst_n)		
+			one_turn_count <= 16'd0;
+		else if(Samp_en == 1) begin
+			if(one_turn_count == one_turn_count_max-1)
+				one_turn_count <= 16'd0;
+			else if(one_turn_posedge == 1)
+				one_turn_count <= one_turn_count + 1'b1;
+		end // 
+	end // always
+	
+	//start store 180 points, high level effect, 
+	always @(posedge Clk or negedge Rst_n) begin
+		if (!Rst_n)	begin	
+			start_store <= 1'b0;
+		end
+		else begin
+			case(one_turn_count)
+				16'd0:start_store <= 1'b0;
+				one_turn_count_samp - 1:start_store <= 1'b1;
+				default:start_store <= start_store;
+			endcase
+		end // else
+	end // always
+
+	//calculate the store points max 180
+	always @(posedge Clk or negedge Rst_n) begin
+		if (!Rst_n)		
+			samp_point <= 8'd0;
+		else if (start_store == 1) begin
+			if(samp_point == points - 1'b1)
+					samp_point <= 8'd0;
+			else if(one_turn_posedge == 1)
+					samp_point <= samp_point + 1'b1;				 				
+			else 
+				samp_point <= 8'd0;		
+		end // else
+	end // always
+	
+	//4 channels cycle 1,99,199,299 is 0 1 2 3 channels, respectively
+	always @(posedge Clk or negedge Rst_n) begin
+		if (!Rst_n)		
+			cnt_2M <= 0;
+		else if (start_store == 1 && start_store == 1) begin
+		//else if (Samp_en == 1) begin
+			if (cnt_2M == cnt_2M_max - 1)		 					
+				cnt_2M <= 0;	
+			else 
+				cnt_2M <= cnt_2M + 1;				
+		end
+		else 
+			cnt_2M <= 0;
+	end // always
+
+	
+	
+
+/// store data
+ram_1port ram_1port(
+	.address(samp_point),
+	.clock(Clk),
+	.data(data_in0),
+	.wren(start_store),
+	.q(data_out)
+	);
+
+
+	//******************************	send data from fifo to uart/spi
+
+endmodule

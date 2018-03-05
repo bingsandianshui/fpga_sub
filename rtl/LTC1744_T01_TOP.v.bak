@@ -1,0 +1,47 @@
+module LTC1744_T01_TOP(Clk,Rst_n,data,
+ADG_759,ENC_P,ENC_N,data_temp_0,data_temp_1,data_temp_2,data_temp_3);
+
+	input Clk;
+	input Rst_n;
+	input [13:0] data;
+	
+	output [1:0]ADG_759;
+	
+	output  ENC_P;		//F2
+	output  ENC_N;		//D1
+	output  [13:0]data_temp_0;
+	output  [13:0]data_temp_1;
+	output  [13:0]data_temp_2;
+	output  [13:0]data_temp_3;
+	
+	wire Clk_150;
+	wire Clk_100;
+
+	pll_100_150 pll_100_150_0(
+	.inclk0(Clk),
+	.c0(Clk_100),
+	.c1(Clk_150)
+	);
+	
+	/*
+	ADG759 ADG759_0(
+	.Clk(Clk_150),
+	.Rst_n(Rst_n),
+	.ADD_759(ADD_759)
+	);
+	*/
+		
+	LTC1744_T01 LTC1744_T01_01(
+	 .Clk(Clk_150),
+	 .Rst_n(Rst_n),
+	 .data(data),
+	 .ADG_759(ADG_759),
+	 .ENC_P(ENC_P),
+	 .ENC_N(ENC_N),
+	 .data_temp_0(data_temp_0),
+	 .data_temp_1(data_temp_1),
+	 .data_temp_2(data_temp_2),
+	 .data_temp_3(data_temp_3),
+	);	
+	
+endmodule

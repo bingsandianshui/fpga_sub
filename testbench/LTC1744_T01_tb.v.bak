@@ -1,0 +1,104 @@
+`timescale 1ns/1ns
+`define clk_period 10
+
+module LTC1744_T01_tb;
+	
+	reg Clk;
+	reg Rst_n;
+	reg [13:0] data1;
+	reg [13:0] data2;
+	reg [13:0] data3;
+	
+	wire [1:0]FST3253_1;
+	wire  ENC_P_1;		//F2
+	wire  ENC_N_1;		//D1
+	
+	wire [1:0]FST3253_2;
+	wire  ENC_P_2;		//F2
+	wire  ENC_N_2;		//D1
+	
+	wire [1:0]FST3253_3;
+	wire  ENC_P_3;		//F2
+	wire  ENC_N_3;		//D1
+	
+/*
+	LTC1744_T01_TOP LTC1744_T01_TOP_01(
+	.Clk(Clk),
+	.Rst_n(Rst_n),
+	.data(data),
+	.FST3253(FST3253),
+	.ENC_P(ENC_P),
+	.ENC_N(ENC_N),
+	.data_temp_4(data_temp_3)
+	);
+*/	
+	LTC1744_T01_TOP LTC1744_T01_TOP1(
+	.Clk(Clk),
+	.Rst_n(Rst_n),
+	.data(data1),
+	.FST3253_1(FST3253_1),
+	.ENC_P_1(ENC_P_1),
+	.ENC_N_1(ENC_N_1),
+	.data(data2),
+	.FST3253_2(FST3253_2),
+	.ENC_P_2(ENC_P_2),
+	.ENC_N_2(ENC_N_2),
+	.data(data3),
+	.FST3253_3(FST3253_3),
+	.ENC_P_3(ENC_P_3),
+	.ENC_N_3(ENC_N_3)
+	);
+	
+	initial Clk = 1;
+	always#(`clk_period*2)Clk = ~Clk;
+	
+	initial begin
+		//复位初始化
+		Rst_n = 1'b0;
+		#(`clk_period*10);
+		data1 = 14'd0;
+		Rst_n = 1'b1;
+		#(`clk_period*10);
+		//产生控制激励
+		data1 = 14'd1;
+
+
+		#(`clk_period+10);
+		data1 = 14'd2;
+		
+		#(`clk_period+2);
+		
+		#(`clk_period);
+		data1 = 14'd3;
+		
+		#(`clk_period+2);
+		
+		#(`clk_period);
+		data1 = 14'd4;
+		
+		#(`clk_period+2);
+		
+		#(`clk_period+2);
+		data1 = 14'd5;
+		
+		#(`clk_period);
+		
+		#(`clk_period+2);
+		data1 = 14'd6;
+		
+		#(`clk_period+2);
+		
+		#(`clk_period+2);
+		data1 = 14'd7;
+		
+		#(`clk_period+2);
+		
+		data1 = 14'd8;
+		#(`clk_period+2);
+		
+		
+		#(`clk_period*1000);
+		$stop;
+	end
+
+endmodule

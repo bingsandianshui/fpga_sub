@@ -1,0 +1,6 @@
+module led_control(Clk, Rst_n, led);
+	input Clk;
+	input Rst_n;
+	
+	output reg led;
+endmodule

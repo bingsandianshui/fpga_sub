@@ -1,0 +1,29 @@
+module LTC1744_T01(Clk,Rst_n,ADD_759,led);
+
+	input Clk;
+	input Rst_n;
+
+	output reg [1:0]ADD_759;
+	output reg led;
+
+	reg [4:0]Count;
+	
+	always@(posedge Clk or negedge Rst_n)
+	if(!Rst_n)begin
+		ADD_759 <= 2'b01;
+		Count <= 5'd0;
+		led <= 1'b1;
+	end
+	else begin
+		if(Count == 5'd20)begin
+			ADD_759 <= ~ADD_759;
+			led <= ~led;
+			Count <= 5'd0;
+		end
+		else begin
+			Count <= Count + 5'd1;
+			ADD_759 <= ADD_759;
+		end
+	end
+	
+endmodule
